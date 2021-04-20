@@ -120,7 +120,7 @@ let
                     outputsToInstall = [ "out" ];
                   };
                 };
-                paths = [ php ];
+                paths = [ php php.dev ];
                 postBuild = ''
                   ln -s ${extraInit} $out/lib/php.ini
 
